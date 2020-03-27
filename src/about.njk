@@ -1,0 +1,14 @@
+---
+title: About this page for You
+layout: base.njk
+---
+
+
+<div class="container">
+    <h1>This page is for you!</h1>
+    <p1> It was made for you using HTML, CSS and JavaScript. And seved as a JAMStack site. </p>
+</div>
+
+{% for item in news %}
+    <a href = "/{{ item.country }}">{{ item.country }}</a>
+{% endfor %}
